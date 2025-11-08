@@ -96,6 +96,10 @@
   margin-right: 20px;
 }
 
+.faculty-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Faculty Info */
 .faculty-info h3 {
   font-size: 1.1rem;
@@ -172,4 +176,5 @@
     grid-template-columns: 1fr; /* stack in single column on mobile */
   }
 }
+
 
