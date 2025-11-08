@@ -1,69 +1,111 @@
-main{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+/* Faculty Section */
+.faculty-section {
+  padding: 40px 60px;
 }
 
-.nav-search{
-    display:flex;
-    justify-content:space-evenly;
-    align-items: center;
-    height:2.5rem;
-    width:60vw;
-    color:#0F1111;
-    background-color:#E6E6E6;
-    border-radius:3px;
-    overflow:hidden;
+.faculty-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
 }
 
-.search-select{
-    width:55px;
-    background-color: #E6E6E6;
+/* Faculty Grid - 3 per row */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Faculty Card */
+.faculty-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.faculty-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px; /* square with slight rounded corners */
+  margin-right: 20px;
+}
+
+/* Faculty Info */
+.faculty-info h3 {
+  font-size: 1.1rem;
+  color: #0F1111;
+  margin-bottom: 5px;
+}
+
+.faculty-info p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Read More Button */
+.read-more {
+  background-color: #FEBD69;
+  color: #000;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Remove hover effect */
+.read-more:hover {
+  background-color: #FEBD69;
+}
+
+/* Staff Section */
+.staff-section {
+  margin-top: 50px;
+}
+
+.staff-section h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.staff-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.staff-section th,
+.staff-section td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.staff-section th {
+  background-color: #E6E6E6;
+  color: #0F1111;
+}
+
+.staff-section tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .faculty-card {
+    flex-direction: column;
     text-align: center;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border:none;
-    font-size:0.8rem;
-    color:#616060;
-}
-
-.search-select:hover{
-    background-color: #d4d4d4;
-    height:2.5rem;
-}
-
-.search-input{
-    width:100%;
-    height:2.5rem;
-    font-size:1.05rem;
-    border:none;
-    outline: none;
-    padding-left:10px;
-    color:#616060;
-}
-
-.search-input:focus {
-    background-color: white;
-}
-
-.nav-search:focus-within {
-    outline: 2px solid orange;
-    border: none;
-}
-
-.search-icon{
-    width: 2.8125rem;
-    height:2.5rem;
-    display:flex;
-    background-color:#FEBD69;
-    justify-content: center;
-    font-size: 1.3rem;
-    align-items:center;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-.search-icon:hover{
-    background-color:#eca241 ;
+  }
+  .faculty-card img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .faculty-grid {
+    grid-template-columns: 1fr; /* stack in single column on mobile */
+  }
 }
