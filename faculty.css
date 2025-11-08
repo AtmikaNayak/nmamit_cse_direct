@@ -1,3 +1,11 @@
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .nav-search{
     display:flex;
     justify-content:space-evenly;
@@ -176,5 +184,6 @@
     grid-template-columns: 1fr; /* stack in single column on mobile */
   }
 }
+
 
 
