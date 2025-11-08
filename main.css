@@ -28,39 +28,6 @@ header{
     font-size: 13px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-/* 
-.about{
-    display: flex;
-    flex-direction: column;
-    background-image: url('main.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.about div{
-    margin: 20px;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding : 10px;
-    font-size: 30px;
-}
-
-#sign{
-    display :flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 60%;
-    align-items: center;
-    text-decoration: none;
-    color: rgb(8, 1, 53);
-} */
 
 .about {
     display: flex;
@@ -111,7 +78,7 @@ header{
     margin-top: 10px;
 }
 
-.sign {
+.sign-main {
     background: linear-gradient(90deg, #2640a6, #4584b7 70%);
     color: #fff;
     border: none;
@@ -124,7 +91,7 @@ header{
     cursor: pointer;
 }
 
-#sign .sign:hover, #sign .sign:focus {
+#sign .sign-main:hover, #sign .sign-main:focus {
     background: linear-gradient(90deg, #3d63d4, #5bb7eb 70%);
     transform: scale(1.045);
     color: #fff;
@@ -164,3 +131,4 @@ footer{
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
