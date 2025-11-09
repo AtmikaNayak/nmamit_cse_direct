@@ -34,30 +34,37 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Username validation
-  if(username){
+  if (username) {
     username.addEventListener("input", () => {
-    if (username.value.length >= 4) {
-      usernameFeedback.textContent = "Username looks good!";
-      usernameFeedback.className = "valid";
-    } else {
-      usernameFeedback.textContent =
-        "Username must be at least 4 characters long.";
-      usernameFeedback.className = "error";
-    }
-  });
+      if (username.value.length >= 4) {
+        usernameFeedback.textContent = "Username looks good!";
+        usernameFeedback.className = "valid";
+      } else {
+        usernameFeedback.textContent =
+          "Username must be at least 4 characters long.";
+        usernameFeedback.className = "error";
+      }
+    });
   }
 
   // Submit validation
   form.addEventListener("submit", (event) => {
+    event.preventDefault(); // always prevent default first
+
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (
-      !emailPattern.test(email.value) ||
-      password.value.length < 8 ||
-      (username && username.value.length < 4)
-    ) {
-      event.preventDefault();
+    const validEmail = emailPattern.test(email.value);
+    const validPassword = password.value.length >= 8;
+    const validUsername = !username || username.value.length >= 4;
+
+    if (!validEmail || !validPassword || !validUsername) {
       alert("Please fill out the form correctly before submitting.");
+      return;
     }
+
+    // ✅ Success path
+    alert("Form submitted successfully!");
+    setTimeout(() => {
+      window.location.href = "home.html"; // redirect safely
+    }, 500);
   });
 });
-
