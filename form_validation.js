@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Submit validation
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-
+    
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const validEmail = emailPattern.test(email.value);
     const validPassword = password.value.length >= 8;
