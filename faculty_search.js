@@ -42,3 +42,17 @@ select.addEventListener("change", (e) => {
     }
   }
 });
+
+const readMoreButtons = document.querySelectorAll(".read-more");
+readMoreButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const info = btn.parentElement.querySelector(".more-info");
+    if (info.style.display === "none" || !info.style.display) {
+      info.style.display = "block";
+      btn.textContent = "Read Less";
+    } else {
+      info.style.display = "none";
+      btn.textContent = "Read More";
+    }
+  });
+});
