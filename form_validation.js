@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Submit validation
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // always prevent default first
+    event.preventDefault();
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const validEmail = emailPattern.test(email.value);
@@ -61,10 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ✅ Success path
     alert("Form submitted successfully!");
     setTimeout(() => {
-      window.location.href = "home.html"; // redirect safely
+      window.location.href = "home.html";
     }, 500);
   });
 });
