@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Username validation
-  username.addEventListener("input", () => {
+  if(username){
+    username.addEventListener("input", () => {
     if (username.value.length >= 4) {
       usernameFeedback.textContent = "Username looks good!";
       usernameFeedback.className = "valid";
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       usernameFeedback.className = "error";
     }
   });
+  }
 
   // Submit validation
   form.addEventListener("submit", (event) => {
@@ -58,3 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
