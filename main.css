@@ -54,7 +54,7 @@ header{
     position: relative;
     z-index: 2;
     margin: 18px 0;
-    background: rgba(215, 213, 213, 0.805);
+    background: rgba(255, 255, 255, 0.921);
     backdrop-filter: blur(8px);
     border-radius: 18px;
     padding: 27px 38px;
