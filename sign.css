@@ -3,11 +3,12 @@
   padding: 0px;
 }
 
-.image {
+.container {
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background: linear-gradient(to right, #e3e3fa, #f7f4ff, #e3e3fa);
 }
 
 img {
@@ -22,13 +23,12 @@ img {
 .sign {
   text-align: left;
   padding: 20px;
-  color: rgb(34, 34, 88);
-  font-size: 20px;
+  color: rgb(21, 24, 67);
+  font-size: 30px;
 }
 
 form {
   width: 100%;
-  height: auto;
   place-items: center;
 }
 
@@ -91,7 +91,7 @@ button[type="reset"] {
   color: white;
   padding: 10px 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
   width: 100%;
@@ -103,17 +103,19 @@ button[type="submit"] a {
   color: white;
 }
 
-.container {
-  height: 60vh;
-}
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #8400b4;
+} 
 
 #signupcon {
   padding-top: 5%;
-  padding-bottom: 20%;
+  padding-bottom: 5%;
 }
 
 #sigincon {
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 input[type="submit"]:hover {

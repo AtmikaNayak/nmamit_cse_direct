@@ -101,12 +101,15 @@ header{
 
 footer{
     background-color: rgb(28, 28, 28);
+    height:300px;
+    align-items: center;
+    justify-content: center;
 }
 
 .links{
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 90px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
