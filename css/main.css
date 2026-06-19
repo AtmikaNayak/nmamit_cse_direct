@@ -35,7 +35,7 @@ header{
     align-items: center;
     justify-content: center;
     min-height: 95vh;
-    background-image: url('main.jpg');
+    background-image: url('../images/main.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

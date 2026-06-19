@@ -17,7 +17,7 @@ searchInput.addEventListener("input", () => {
 });
 
 const select = document.querySelector(".search-select");
-select.innerHTML = '<option value="">Select Faculty</option>';
+select.innerHTML = '<option value="">All</option>';
 facultyCards.forEach((card) => {
   const name = card.querySelector("h3")?.innerText.trim();
   if (name) {
