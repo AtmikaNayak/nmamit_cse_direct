@@ -27,13 +27,17 @@ A web-based navigation and information portal developed for the Computer Science
 
 ## Screenshots
 
-### Landing Page
-
-![Landing Page](images/landing.png)
-
 ### Home Page
 
 ![Home Page](images/home.png)
+
+### Authentication
+
+![Sign In / Sign Up](images/sign.png)
+
+### Landing Page
+
+![Landing Page](images/landing.png)
 
 ### Faculty Directory
 
@@ -42,10 +46,6 @@ A web-based navigation and information portal developed for the Computer Science
 ### Classroom Information
 
 ![Classroom Information](images/classroom.png)
-
-### Authentication
-
-![Sign In / Sign Up](images/sign.png)
 
 ---
 
