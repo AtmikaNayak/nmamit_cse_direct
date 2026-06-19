@@ -27,17 +27,17 @@ A web-based navigation and information portal developed for the Computer Science
 
 ## Screenshots
 
-### Home Page
+### Landing Page
 
-![Home Page](images/home.png)
+![Landing Page](images/home.png)
 
 ### Authentication
 
 ![Sign In / Sign Up](images/sign.png)
 
-### Landing Page
+### Home Page
 
-![Landing Page](images/landing.png)
+![Home Page](images/landing.png)
 
 ### Faculty Directory
 
@@ -82,6 +82,12 @@ nmamit_cse_direct/
 * Welcome screen for NMAMIT CSE
 * Sign In and Sign Up navigation options
 
+### Authentication
+
+* Sign In form
+* Sign Up form
+* Email, username, and password validation
+
 ### Home Page
 
 * Quick access to faculty details
@@ -98,12 +104,6 @@ nmamit_cse_direct/
 * Classroom locations
 * Laboratory details
 * Building and floor information
-
-### Authentication
-
-* Sign In form
-* Sign Up form
-* Email, username, and password validation
 
 ---
 
